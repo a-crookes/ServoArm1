@@ -17,3 +17,11 @@ The following packages:
 * MoveIt! Plugin
 * Arduino IDE
 
+
+
+### MoveIt! Overview
+MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
+
+To upload your URDF model into MoveIt, I would recommend using the Setup Assistant which will help to define joints, collisions, IK solvers, and motion planning. To start the MoveIt! Setup Assistant:
+
+`roslaunch moveit_setup_assistant setup_assistant.launch`
