@@ -24,8 +24,8 @@ Contents:
 2. Setting up a robot in Linux
   2.1 Solidworks to URDF
 
-### 1. Linux and ROS Kinect
-# Overview
+# 1. Linux and ROS Kinect
+## Overview
 This section will provide you with a brief overview of the Linux architecture, an overview of ROS and and how to correctly setup ROS Kinetic distribution. 
 ## 1.1 Installing and Setting Up ROS
 We will be working on an Ubuntu machine running 16.04 which is fully supported until April 2021. A lot of the commands that we are going to use will be done in the terminal. There are two ways to access the terminal:
@@ -34,7 +34,7 @@ We will be working on an Ubuntu machine running 16.04 which is fully supported u
 
 To install ROS, following this official guide: http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-### 2. Setting up a robot in ROS
+# 2. Setting up a robot in ROS
 A tutorial can be found at http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot#Prepare_CAD_Models 
 
 ## 2.1 Solidworks to URDF
@@ -50,7 +50,7 @@ There are two types of mesh files that are required for the full ROS simulations
 
 * Go to www.meshlab.net and install MeshLab for your OS
 
-### MoveIt! Overview
+# MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
 
 To upload your URDF model into MoveIt, I would recommend using the Setup Assistant which will help to define joints, collisions, IK solvers, and motion planning. To start the MoveIt! Setup Assistant:
