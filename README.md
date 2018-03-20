@@ -20,7 +20,6 @@ The following packages:
 Contents:
 1. Linux and ROS Kinetic
   1.1 Installing and Setting Up ROS
-  1.2 Getting started with TurtleBot simulator
 2. Setting up a robot in Linux
   2.1 Solidworks to URDF
 
@@ -41,10 +40,11 @@ Start with these three tutorials to learn the basics and ensrue that everything 
 * http://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem
 * http://wiki.ros.org/ROS/Tutorials/CreatingPackage
 
-These tutorials will help you setup a catkin workspace in the home folder and 
-
+These tutorials will help you setup a catkin workspace in the home folder and build out a tutorial package. This is good to do to ensure that everything was installed correctly. The tutorial package can be deleted later if desired, but the files can be used as good reference templates. 
 
 # 2. Setting up a robot in ROS
+Now on to the meat and bones of ROS, setting up an acutal robot. 
+
 A tutorial about setting up an industrial robot can also be found at:
 http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot#Prepare_CAD_Models 
 
