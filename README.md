@@ -33,9 +33,19 @@ We will be working on an Ubuntu machine running 16.04 which is fully supported u
 * 2. Go to the search bar at the top left of the desktop and search for terminal. Click on it to open it up
 
 To install ROS, following this official guide: http://wiki.ros.org/kinetic/Installation/Ubuntu
+The full desktop instillation should be used. I would recommend setting the .bashrc to the recommended pathway, it can be annoying and troublesome to have to do it with every new terminal. 
+
+Once ROS Kinetic is installed, move on to testing the instillation and setting up a catkin workspace. 
+Start with these three tutorials to learn the basics and ensrue that everything is set up properly: 
+* http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment 
+* http://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem
+* http://wiki.ros.org/ROS/Tutorials/CreatingPackage
+These tutorials will help you setup a catkin workspace in the home folder and 
+
 
 # 2. Setting up a robot in ROS
-A tutorial can be found at http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot#Prepare_CAD_Models 
+A tutorial about setting up an industrial robot can also be found at:
+http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot#Prepare_CAD_Models 
 
 ## 2.1 Solidworks to URDF
 A .URDF is a type of file used by the ROS archetecture to build your robot in a simulated environment. This .URDF file is composed of joints and links all containing rotation, position, mesh, and parent/child information. Before we write a .URDF, we need to go to Solidworks and save out our robot as a series of .STL files. Note that each rigid body should be its own .STL. 
