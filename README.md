@@ -42,6 +42,9 @@ Start with these three tutorials to learn the basics and ensrue that everything 
 
 These tutorials will help you setup a catkin workspace in the home folder and build out a tutorial package. This is good to do to ensure that everything was installed correctly. The tutorial package can be deleted later if desired, but the files can be used as good reference templates. 
 
+If this is your first time in ROS, feel free to continue on with the tutuorials. It is a great way to learn the OS and beomce farmiliar with ROS
+
+
 # 2. Setting up a robot in ROS
 Now on to the meat and bones of ROS, setting up an acutal robot. 
 
