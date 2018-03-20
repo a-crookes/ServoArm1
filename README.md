@@ -40,6 +40,7 @@ Start with these three tutorials to learn the basics and ensrue that everything 
 * http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment 
 * http://wiki.ros.org/ROS/Tutorials/NavigatingTheFilesystem
 * http://wiki.ros.org/ROS/Tutorials/CreatingPackage
+
 These tutorials will help you setup a catkin workspace in the home folder and 
 
 
