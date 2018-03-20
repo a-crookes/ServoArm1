@@ -24,7 +24,7 @@ Contents:
 2. Setting up a robot in Linux
   2.1 Solidworks to URDF
 
-# 1. Linux and ROS Kinect
+# 1. Linux and ROS Kinetic
 ## Overview
 This section will provide you with a brief overview of the Linux architecture, an overview of ROS and and how to correctly setup ROS Kinetic distribution. 
 ## 1.1 Installing and Setting Up ROS
