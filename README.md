@@ -19,7 +19,7 @@ The following packages:
 
 Contents:
 1. Linux and ROS Kinetic
-  1.1 Setting up the Linux machine
+  1.1 Installing and Setting Up ROS
   1.2 Getting started with TurtleBot simulator
 2. Setting up a robot in Linux
   2.1 Solidworks to URDF
@@ -27,18 +27,12 @@ Contents:
 ### 1. Linux and ROS Kinect
 # Overview
 This section will provide you with a brief overview of the Linux architecture, an overview of ROS and and how to correctly setup ROS Kinetic distribution. 
-## 1.1 Setting up the Linux machine
+## 1.1 Installing and Setting Up ROS
 We will be working on an Ubuntu machine running 16.04 which is fully supported until April 2021. A lot of the commands that we are going to use will be done in the terminal. There are two ways to access the terminal:
 * 1. Use Ctrl + Alt + T and it will open a new window
 * 2. Go to the search bar at the top left of the desktop and search for terminal. Click on it to open it up
 
-# Setting up your sources.list file
-Open up a new terminal so we can setup the sources.list file which allows the computer to access the ROS repository at http://packages.ros.org. 
-
-`$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu
- $ (lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list' `
- 
-
+To install ROS, following this official guide: http://wiki.ros.org/kinetic/Installation/Ubuntu
 
 ### 2. Setting up a robot in ROS
 A tutorial can be found at http://wiki.ros.org/Industrial/Tutorials/Create%20a%20URDF%20for%20an%20Industrial%20Robot#Prepare_CAD_Models 
