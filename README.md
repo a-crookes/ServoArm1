@@ -62,7 +62,12 @@ There are two types of mesh files that are required for the full ROS simulations
 * give each .STL a name that is all lowercase letters and has no spaces (underscores are okay)
 * Send the visual .STL files to the Linux Machine
 
-* Go to www.meshlab.net and install MeshLab for your OS
+* To make the collision STL's, go to www.meshlab.net and install MeshLab for your OS
+* Open MeshLab and click on File -> Import Mesh and choose the STL you wish to import
+* To simplify the mesh, go to Fileter -> Remeshing, Simplification and Reconstruction and either choose convex hull or Simplification: Quadric Edge Collapse Decimination. Both have different outcomes, so try both and see what works best for your part
+* Export that piece as an STL after it has been simplified and send the collision STLs to the Linux Machine
+
+
 
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
