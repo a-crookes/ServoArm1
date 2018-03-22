@@ -22,6 +22,7 @@ Contents:
   1.1 Installing and Setting Up ROS
 2. Setting up a robot in Linux
   2.1 Solidworks to URDF
+  2.2 Creating a .xacro model
 
 # 1. Linux and ROS Kinetic
 ## Overview
@@ -64,11 +65,30 @@ There are two types of mesh files that are required for the full ROS simulations
 * Send the visual .STL files to the Linux Machine
 ### Collision Model
 * To make the collision STL's, go to www.meshlab.net and install MeshLab for your OS
-* Open MeshLab and click on File -> Import Mesh and choose the STL you wish to import
+* Open MeshLab and click on File -> Import Mesh and choose the visual STL you wish to import
 * To simplify the mesh, go to Fileter -> Remeshing, Simplification and Reconstruction and either choose convex hull or Simplification: Quadric Edge Collapse Decimination. Both have different outcomes, so try both and see what works best for your part
 * Export that piece as an STL after it has been simplified and send the collision STLs to the Linux Machine
 
+## 2.2 Setting up the Robot File in ROS
+On your Linux machine, you should alredy have a catkin_ws in your home folder. The robot files will live in this file. If the catkin_ws folder was set up correctly, there should then be three folders within that parent folder (src, devel, include). For now, we will only be working in the src folder. 
 
+Navigate into the src folder and create a a new package with the name of your robot inside the <<robot name>> by typing the following into your console
+  
+  `$ cd ~/catkin_ws/src
+   $ catkin_create_pkg <<robot name>> std_msgs rospy roscpp `
+  
+  *the cd command in the first line navigates controls the terminal navigation to the location you choose (~/catkin_ws/src)*
+  This will generate a file of the name of the robot you chose and generate a package.xml and CMakeLists.txt file.  
+  
+  Info on those can be found here: 
+    * http://wiki.ros.org/catkin/package.xml
+    * http://wiki.ros.org/catkin/CMakeLists.txt
+  
+## 2.3 Creating a .xacro file for the Robot
+A .xacro file is an XML Macros file, which basically means you can have a bunch of short and readable XML files and then expand them into larger XML files by using macros. 
+More xacro documentation can be found at: http://wiki.ros.org/xacro
+
+The xacro files will be stored in the robot arm folder. 
 
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
