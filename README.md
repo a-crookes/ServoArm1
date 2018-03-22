@@ -56,12 +56,13 @@ A .URDF is a type of file used by the ROS archetecture to build your robot in a 
 
 There are two types of mesh files that are required for the full ROS simulations to work, a visual and collision model. The visual model can be fairly intracate and look good (aka high triangle count) becuase it will just be used for visual rendering. The collision model however should be simpler becuase it will be used for all of the collision calculations and not every hole face will need to be taken into account. We will use a program called MeshLab www.meshlab.net to simplify our collision mesh. 
 
+### Visual Model
 * Build your assembly until you are happy with it in Solidworks
 * Make sure that each link has a coincident mate to its parent link, this will be necessary for future steps
 * Save out each link (eg base, proximal_arm_pitch, medial_arm_roll) as its own .STL file. When saving in Solidworks, once STL filetype is selected, there is an options button which will take you to a menu where you can select to save the subassembly as one part and not indidual parts
 * give each .STL a name that is all lowercase letters and has no spaces (underscores are okay)
 * Send the visual .STL files to the Linux Machine
-
+### Collision Model
 * To make the collision STL's, go to www.meshlab.net and install MeshLab for your OS
 * Open MeshLab and click on File -> Import Mesh and choose the STL you wish to import
 * To simplify the mesh, go to Fileter -> Remeshing, Simplification and Reconstruction and either choose convex hull or Simplification: Quadric Edge Collapse Decimination. Both have different outcomes, so try both and see what works best for your part
