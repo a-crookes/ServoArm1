@@ -75,7 +75,7 @@ On your Linux machine, you should alredy have a catkin_ws in your home folder. T
 Navigate into the src folder and create a a new package with the name of your robot inside the <<robot name>> by typing the following into your console
   
   `$ cd ~/catkin_ws/src
-   $ catkin_create_pkg <<robot name>> std_msgs rospy roscpp `
+   $ catkin_create_pkg <<robot name>> std_msgs rospy roscpp`
   
   *the cd command in the first line navigates controls the terminal navigation to the location you choose (~/catkin_ws/src)*
   This will generate a file of the name of the robot you chose and generate a package.xml and CMakeLists.txt file.  
@@ -95,7 +95,11 @@ The xacro files will be stored in the robot arm folder.
 To convert your .xacro file to .urdf file, start by sourcing your file locaiton to the urdf folder (for example by typing cd catkin_ws/src/<<robot>>/urdf).
 Before going straight to a URDF file, we first need to make a xacro file that will combine all of our macros. The one for this robot is called kbot.xacro. Once this xacro is created and/or placed into the urdf folder, we can type the following into the terminal:
 
-`rosrun xacro xacro --inorder -o kbot.urdf kbot.xacro`
+`$ rosrun xacro xacro --inorder -o kbot.urdf kbot.xacro`
+
+Next we need to check the model to see if all of the links are correctly chained to their parents. To do this, in the terminal, type: 
+
+`$ check_urdf <<robot.urdf>>`
 
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
