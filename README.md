@@ -101,6 +101,10 @@ Next we need to check the model to see if all of the links are correctly chained
 
 `$ check_urdf <<robot.urdf>>`
 
+To view the urdf model, type: 
+
+`$ roslaunch urdf_tutorial display.launch model:=kbot_arm.urdf gui:=True`
+      
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
 
