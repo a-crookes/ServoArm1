@@ -1,5 +1,0 @@
-<?xml version="1.0" ?>
-<robot name="kbot_arm" xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:include filename="$(find kbot_arm)/urdf/kbot_arm.urdf.xacro"/>
-  <xacro:kbot_ prefix=""/>
-</robot>
