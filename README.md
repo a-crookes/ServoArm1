@@ -104,7 +104,15 @@ Next we need to check the model to see if all of the links are correctly chained
 To view the urdf model, type: 
 
 `$ roslaunch urdf_tutorial display.launch model:=kbot_arm.urdf gui:=True`
-      
+
+### Malformed .stl file error
+There is a bug in the .stl files that are saved out from Solidworks that inserts a 'solid' tag into the file which makes it look like an ASCII file instead of the binary file. To fix this, navigate in the terminal to the folder where the stl's are located and type the following: 
+
+`$ sed -i 's/^solid/robot/' *`
+
+This replaces the instance of solid in the file for the word robot which is a non-stl defining word and should prevent the file from being considered malformed. 
+
+
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
 
