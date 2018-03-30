@@ -111,7 +111,7 @@ There is a bug in the .stl files that are saved out from Solidworks that inserts
 `$ sed -i 's/^solid/dilos/' *`
 
 This replaces the instance of solid in the file for the word dilos which is a non-stl defining word and should prevent the file from being considered malformed. 
-
+More information about this bug can be found at https://github.com/ros-industrial/abb_experimental/issues/5
 
 # MoveIt! Overview
 MoveIt! is a great tool for making the URDF that was exported from SW into a usable model to develop on. 
