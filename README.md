@@ -108,9 +108,9 @@ To view the urdf model, type:
 ### Malformed .stl file error
 There is a bug in the .stl files that are saved out from Solidworks that inserts a 'solid' tag into the file which makes it look like an ASCII file instead of the binary file. To fix this, navigate in the terminal to the folder where the stl's are located and type the following: 
 
-`$ sed -i 's/^solid/robot/' *`
+`$ sed -i 's/^solid/dilos/' *`
 
-This replaces the instance of solid in the file for the word robot which is a non-stl defining word and should prevent the file from being considered malformed. 
+This replaces the instance of solid in the file for the word dilos which is a non-stl defining word and should prevent the file from being considered malformed. 
 
 
 # MoveIt! Overview
