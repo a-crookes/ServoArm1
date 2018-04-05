@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<robot name="kbot_arm" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- include macro definitions -->
+  <xacro:include filename="$(find kbot_arm)/urdf/kbot_arm.xacro"/>
+  <xacro:include filename="$(find kbot_arm)/urdf/kbot_gripper.xacro"/>
+  
+  <!-- arm -->
+  <xacro:kbot_arm_ prefix=""/>
+
+  <!--connect the gripper to the arm -->
+    <!--
+  <link name="kbot_eef_attach"/>
+  <joint name="arm_to_eef_joint" type="fixed">
+    <parent link="link_6"/>
+    <child link="kbot_eef_attach"/>
+    <origin xyz= "0 0 0.02540" rpy= "0 0 0"/>
+  </joint>
+  -->
+
+  <!-- gripper -->
+  <xacro:kbot_gripper_ prefix=""/>
+
+  <joint name="gripper_joint" type="fixed">
+    <parent link="tool0"/>
+    <child link="palm"/>
+    <origin xyz ="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+</robot>

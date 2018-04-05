@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<robot name="kbot_gripper" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find kbot_arm)/urdf/kbot_gripper.urdf.xacro"/>
+  <xacro:kbot_gripper_ prefix=""/>
+</robot> 
