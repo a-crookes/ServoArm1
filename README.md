@@ -119,3 +119,23 @@ MoveIt! is a great tool for making the URDF that was exported from SW into a usa
 To upload your URDF model into MoveIt, I would recommend using the Setup Assistant which will help to define joints, collisions, IK solvers, and motion planning. To start the MoveIt! Setup Assistant:
 
 `roslaunch moveit_setup_assistant setup_assistant.launch`
+
+
+## Using Scripts in Moveit To Control the Robot
+There are various methods to control a robot that I have used, from python script, to cpp script to command line interface. 
+
+To initiate the command line interface: 
+Run the moveit demo.launch file by entering
+
+`roslaunch kbot_arm demo.launch` 
+
+Then initiate the moveit commander package and tool with 
+
+`rosrun moveit_commander moveit_commander_cmdline.py`
+
+This will start the command line in the terminal. To work with the robot, first declare which kinematic group you want to work with then type commands. 
+
+Type: 
+`use <group name>`
+`current` <-- this will give you the current orinetation of the link attached to the end effector
+More information on this can be found at: http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/planning/src/doc/moveit_commander.html
