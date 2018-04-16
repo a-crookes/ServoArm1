@@ -180,7 +180,7 @@ To start the Arduino IDE, type:
 
 To be able to access the serial ports on the Ubuntu machine, you have to add yourself to the dialout groups. This is done with
 
-`$ sudo username -a -G dialout <username>`
+`$ sudo usermod -a -G dialout <username>`
 
 You should now be good to go to start using the Arduino IDE with ROS. Navigate to the toolbar and click on File -> Examples -> ros_lib to see the ROS examples that are provided with the library we previously set up. Tutorials on how to use these can be found here: http://wiki.ros.org/rosserial_arduino/Tutorials 
 
