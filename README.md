@@ -156,3 +156,20 @@ To install the Arduino ROS software:
 
 `$ sudo apt-get install ros-kinetic-rosseral` 
 
+At this point, we need to source our sketchbook and libraries. The sketchbooks is where we will store our Arduino code during development. ROS bindings for Arduino are implemented as an Arduino library within the IDE. This library, ros_lib, must be added to the /libraries  subdirectory within the user's Arduino sketchbook (the code directory). We are using ~/sketchbook as  the directory in which to store our Arduino code (sketches). The subdirectory  /libraries should already exist, or should be created within your sketchbook . Change to this subdirectory with the following command (<sketchbook>  is the path to your sketchbook  directory):
+  
+  `$ cd <sketchbook>/libraries` 
+  
+  `$ rm -rf ros_lib` 
+  
+  `$ rosrun rosserial_arduino make_libraries.py` 
+  
+  To confirm everything was set up correctly, type: 
+  
+  `$ cd <sketchbook>/libraries/ros_lib/examples/`
+  
+  `$ ls`
+  
+  The contents should be similar to the following files: 
+  
+  ADC     button_example  IrRanger  pubsub       ServoControl  Ultrasound Blink    Clapper          Logging   ServiceClient  Temperature BlinkM  HelloWorld      Odom     ServiceServer  TimeTF
