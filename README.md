@@ -151,6 +151,7 @@ Follow these instructions in your terminal to download the Arduino IDE and requi
 `$ sudo apt-get install arduino arduino-core`
 
 To install the Arduino ROS software: 
+
 `$ sudo apt-get install ros-kinetic-rosserial-arduino`
 
 `$ sudo apt-get install ros-kinetic-rosseral` 
