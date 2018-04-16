@@ -147,9 +147,11 @@ The arduino rosserial library gives you the ability to use an Arduino board in c
 Follow these instructions in your terminal to download the Arduino IDE and required libraries
 
 `$ sudo apt-get update`
+
 `$ sudo apt-get install arduino arduino-core`
 
 To install the Arduino ROS software: 
 `$ sudo apt-get install ros-kinetic-rosserial-arduino`
+
 `$ sudo apt-get install ros-kinetic-rosseral` 
 
