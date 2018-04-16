@@ -183,3 +183,25 @@ To be able to access the serial ports on the Ubuntu machine, you have to add you
 `$ sudo username -a -G dialout <username>`
 
 You should now be good to go to start using the Arduino IDE with ROS. Navigate to the toolbar and click on File -> Examples -> ros_lib to see the ROS examples that are provided with the library we previously set up. Tutorials on how to use these can be found here: http://wiki.ros.org/rosserial_arduino/Tutorials 
+
+### Servo Control with rosserial and Arduino
+
+To use the servo control functionality, first open the servo control example from the Arduino IDE examples -> ros_lib section. 
+
+The key to the Arduino script that appears is that there is a global Servo object, it is attached to pin 9 of the Arduino board (must be a PWM pin), and then on each servo callback loop, a new angle is written to the servo. 
+
+The only major difference between this sketch and sketches not using ROS is the instance of a node handler, nh. You can read more about node handelers here: http://wiki.ros.org/rosserial_arduino/Tutorials/NodeHandle%20and%20ArduinoHardware 
+
+To test the servo control code, you will need to run a roscore and rosserial python node in their own terminals. 
+
+In one terminal, type: 
+
+`$ roscore`
+
+Open a new terminal and type: 
+
+`$ rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0`
+
+In a third terminal window we can publish angles to the arduino with rostopic pub. 
+
+`$rostopic pub servo std_msgs/UInt16 <angle>`
