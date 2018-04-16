@@ -139,3 +139,17 @@ Type:
 `use <group name>`
 `current` <-- this will give you the current orinetation of the link attached to the end effector
 More information on this can be found at: http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/pr2_tutorials/planning/src/doc/moveit_commander.html
+
+## Arduino and ROS
+The arduino rosserial library gives you the ability to use an Arduino board in conjunction with the ROS terminals to publish serial commands. 
+
+### Instructions for Installing the Arduino IDE
+Follow these instructions in your terminal to download the Arduino IDE and required libraries
+
+`$ sudo apt-get update`
+`$ sudo apt-get install arduino arduino-core`
+
+To install the Arduino ROS software: 
+`$ sudo apt-get install ros-kinetic-rosserial-arduino`
+`$ sudo apt-get install ros-kinetic-rosseral` 
+
